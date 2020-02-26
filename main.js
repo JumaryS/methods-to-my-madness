@@ -85,6 +85,54 @@ function split(string, split = '') {
   return out;
 }
 
+
+
+
+
+
+function trimStart(string){
+  
+  
+  if (string[0] !== ' '){
+    return string
+  }
+  let start;
+  for(let i=0; i<=string.length; i++){
+    if (string[i] !== ' '){
+    start = i;
+    break
+  }
+    
+
+  } string= string.slice(start,string.length)
+  return string
+
+}
+
+
+
+
+
+function trimEnd(string){
+  
+  if (string.length-1 !== ' '){
+    return string
+  }
+  let  endPoint;
+  for(let i=string.length; i>0; i--){
+    if (string[i] !== ' '){
+    endPoint = i;
+    break
+  }
+    
+
+  } string= string.slice(0,endPoint+1)
+  return string
+
+}   
+  //function startsWith(string, string2) {
+  //return string2 === slice(string, 0, string2.length);
+  //}//
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
