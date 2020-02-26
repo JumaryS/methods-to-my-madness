@@ -34,9 +34,9 @@ function repeat(string, count) {
   return answers;
 }
 //I have a function which contains two params string
-//
-//
-//
+//by returning string 2 ill need to check if it is 
+//equal to  slice(the param string, index of 0 (first index))
+//and the length of string 2;
 //
 
 function startsWith(string, string2) {
